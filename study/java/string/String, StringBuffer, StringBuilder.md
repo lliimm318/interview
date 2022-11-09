@@ -28,3 +28,10 @@ String은 불변 문자열이다. 즉 문자열이 할당된 **메모리 공간�
 **String Buffer** - 동기화를 지원 -> 멀티스레드 환경에 적합.   
 **String Builder** - 동기화를 지원하지 않는다 -> 싱글스레드, 멀티스레드지만 동기화가 필요없을때.   
 String Builder가 동기화를 고려하지 않아서 싱글스레드 환경에서 연산처리가 빠르다!
+<br/></br>
+
+### 저장위치
+> String은 Constant Pool에 저장, 나머지는 Heap에 저장 
+
+Constant Pool (상수풀)이란 Integer, String과 같은 레퍼런스 타입의 데이터 값, 메소드 호출, Class 호출 등을 저장하는 JVM 메모리 공간이다
+Heap 영역은 new로 셍성한 객체가 저장된다. 
