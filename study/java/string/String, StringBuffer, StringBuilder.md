@@ -21,7 +21,7 @@
 .append()로 **동일한 객체**의 문자열을 추가하면 추가된 문자열에 따라 크기를 변경하면서 문자열을 변경한다.
 최종적으로 .toString()으로 객체를 한번만 생성한 문자열을 만든다.
 <br/></br>
-장점 - 문자열 연산이 많은 경우 우수한 성능
+장점 - 문자열 연산이 많은 경우 우수한 성능.    
 단점 - read의 경우 새로운 String을 생성해서 성능이 떨어진다.
 <br/></br>
 
@@ -39,5 +39,5 @@ String Builder가 동기화를 고려하지 않아서 싱글스레드 환경에�
 ### 저장위치
 > String은 Constant Pool에 저장, 나머지는 Heap에 저장 
 
-Constant Pool (상수풀)이란 Integer, String과 같은 레퍼런스 타입의 데이터 값, 메소드 호출, Class 호출 등을 저장하는 JVM 메모리 공간이다
+Constant Pool (상수풀)이란 Integer, String과 같은 레퍼런스 타입의 데이터 값, 메소드 호출, Class 호출 등을 저장하는 JVM 메모리 공간이다 <br/>
 Heap 영역은 new로 셍성한 객체가 저장된다. 
