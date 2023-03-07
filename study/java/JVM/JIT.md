@@ -26,9 +26,27 @@ C2 - level4 의 컴파일 레벨<br/>
 > C1에 비해 더 오래 코드를 관찰 / 분석해서 더 나은 최적화<br/>
 
 
+## Compilation Level
+Level0
+- 모든 Java 코드를 Interpreter 방식으로 해석<br/>
+#### C1<br/>
+Level 1	<br/>
+- 메소드를 프로파일링을 하지않고 컴파일. 메소드 복잡성이 낮기때문에 최적화가 필요한 부분이 업프로파일링을 통한 C2 컴파일이 의미가 없기 때문<br/>
+
+Level 2<br/>
+- C2 컴파일 큐가 가득 찼을때 최대한 빨리 컴파일 하기 위해 사용<br/>
+
+Level 3<br/>
+- 사소하고 간단한 메소드(Level 1)가 아니거나 C2 컴파일 큐가 가득찬 경우(Level 2)가 아닌 그 외의 모든 경우에 사용. 가장 일반적인 컴파일 단계 시나리오는 Level 0에서 Level 3로 점프한다.<br/>
+
+#### C2<br/>
+Level4
+	
+
+
 
 
 
 <br/></br>
-참고 ) 	[JVM은 왜 JIT Compiler를 사용할까?](https://velog.io/@jslog/JVM%EC%9D%80-%EC%99%9C-JIT-Compiler%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%A0%EA%B9%8C)
-		[JIT(Just In Time) 컴파일러 :: 으뜸별](https://beststar-1.tistory.com/3)
+참고) <br/>
+[JVM은 왜 JIT Compiler를 사용할까?](https://velog.io/@jslog/JVM%EC%9D%80-%EC%99%9C-JIT-Compiler%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%A0%EA%B9%8C)<br/>     [JIT(Just In Time) 컴파일러 :: 으뜸별](https://beststar-1.tistory.com/3)<br/>
