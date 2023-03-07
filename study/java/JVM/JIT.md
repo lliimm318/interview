@@ -49,6 +49,5 @@ Level4
 
 <br/></br>
 참고) <br/>
-- [JVM은 왜 JIT Compiler를 사용할까?](https://velog.io/@jslog/JVM%EC%9D%80-%EC%99%9C-JIT-Compiler%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%A0%EA%B9%8C)<br/>  
 - [JIT(Just In Time) 컴파일러 :: 으뜸별](https://beststar-1.tistory.com/3)<br/>
 - 
