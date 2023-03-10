@@ -4,7 +4,7 @@
 - 생성자에서 다른 생성자 호출 시 사용.   
 - 다른 생성자 호출 시 첫 줄에서만 사용 가능
 
-```
+``` java
 class User {
     String name; // 인스턴스 변수
     int age; 
