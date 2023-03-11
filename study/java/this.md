@@ -9,7 +9,7 @@ class User {
     String name; // 인스턴스 변수
     int age; 
     
-    User(String name, int age){
+    User(String name, int age) {
         this.name = name; 
         this.age = age;
     }
