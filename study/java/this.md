@@ -1,13 +1,22 @@
 # 생성자 this()와 참조변수 this.
+this() 생성자이고, this.는 자기 자신을 가르키는 참조변수이다.
 
 ## 생성자 this() 
-- 생성자에서 다른 생성자 호출 시 사용.   
+- 같은 클래스에서 다른 생성자 호출 시 사용.   
 - 다른 생성자 호출 시 첫 줄에서만 사용 가능
 
 ``` java
 class User {
     String name; // 인스턴스 변수
     int age; 
+    
+    User() {
+        this("이름", 20); 
+    }
+    
+    User(Intger age) {
+        this("이름", age);
+    }
     
     User(String name, int age) {
         this.name = name; 
