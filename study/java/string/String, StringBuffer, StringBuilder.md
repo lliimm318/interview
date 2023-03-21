@@ -37,7 +37,7 @@ String Builder가 동기화를 고려하지 않아서 싱글스레드 환경에�
 <br/></br>
 
 ### 저장위치
-> new로 생성한 String은 Constant Pool에 저장, 나머지는 Heap에 저장 
+> new로 생성하지 않은 String은 Constant Pool에 저장, 나머지는 Heap에 저장 
 
 Constant Pool (상수풀)이란 Integer, String과 같은 레퍼런스 타입의 데이터 값, 메소드 호출, Class 호출 등을 저장하는 JVM 메모리 공간이다 <br/>
 Heap 영역은 new로 셍성한 객체가 저장된다. 
