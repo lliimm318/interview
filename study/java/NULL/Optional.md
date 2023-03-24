@@ -61,16 +61,34 @@ ex) 회원 가입
 <br/><br>
 ### NoSuchElementException
 NullPointException 말고?? 저건 뭐냐
-```
+``` java
 Optional<User> optioanlUser = ;
 User user = optionalUser.get() //optioanl이 갖는 값이 없너서 NoSuchElementException
 ```
-이름에서 알 수 있듯 optional이 갖는 값이 존재하지 않으면 생기는 에러이다.
+이름에서 알 수 있듯 optional이 갖는 값이 존재하지 않으면 생기는 에러이다. 
 <br/><br>
-### 직렬화
-기본적으로 optional을 
+### 오버헤드
+Optioanl은 객체를 감싸는 컨테이너 이다. 그래서 Optioanl 객체 자체 저장을 위한 메모리가 필요하고, Optioanl 안에 있는 객체를 접근해야 함으로 시간이 걸린다.
+
+<br/><br>
+## '잘'사용해 보아요
+### Optioanl에 null 할당 금지
+간혹 값이 없는 경우 optional에 null을 넣는 사람이 있다. 진짜 딱밤이다! Optioanl은 박싱 클래스이다. Optional에 null을 할당하는 짓은 다시 이 객체를 null체크 해야한다는 이야기다! 
+
+값이 없는 경우면 **Optioanl.empty**를 사용하자!!!
+<br/><br>
+### 값이 없을 때, Optional.orElseX() 로 기본값 반환
+객체를 검사할 때, isPresent()로 검사하고 orElseGet()이용해서 가져온다.
+<br/><br>
+### 생성자 수정자 메소드 파라미터에 Optional 넘기지 마!
+optional은 변환 타입으로 사용해야한다.
+
 
 
 <br/><br>    
-참고) https://mangkyu.tistory.com/70
+참고)
+ 
+https://mangkyu.tistory.com/70
+
+https://mangkyu.tistory.com/203
   
