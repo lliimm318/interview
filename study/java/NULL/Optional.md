@@ -77,8 +77,8 @@ Optioanl은 객체를 감싸는 컨테이너 이다. 그래서 Optioanl 객체 �
 
 값이 없는 경우면 **Optioanl.empty**를 사용하자!!!
 <br/><br>
-### 값이 없을 때, Optional.orElseX() 로 기본값 반환
-객체를 검사할 때, isPresent()로 검사하고 orElseGet()이용해서 가져온다.
+### 값이 없을 때, Optional.orElseGet() 로 기본값 반환
+객체를 검사할 때, isPresent()로 검사하고 orElseGet()이용해서 가져와랑.
 <br/><br>
 ### 생성자 수정자 메소드 파라미터에 Optional 넘기지 마!
 optional은 변환 타입으로 사용해야한다.
