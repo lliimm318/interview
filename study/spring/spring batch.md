@@ -20,7 +20,7 @@ spring batch는 엔터프라이즈 시스템 운영에서 **대용량 일괄처�
 job의 실행 단위이다. job을 실행 시키면 하나의 jobinstance가 생성된다.
 1월1일, 1월2일에 실행을 하면 각각 jobinstance가 생성되는데 이 때 1월1일에 실행한 jobinstance가 실패해서 다시 실행을 시켜도 jobinstance는 1월1일 데이터만 처리한다.
 
-**JobParameters**<br/><br>
+**JobParameters**<br/>
 joninstance의 실행 단위이다.
 
 **JobExecution** <br/>
