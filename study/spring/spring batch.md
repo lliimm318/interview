@@ -21,10 +21,14 @@ job의 실행 단위이다. job을 실행 시키면 하나의 jobinstance가 생
 1월1일, 1월2일에 실행을 하면 각각 jobinstance가 생성되는데 이 때 1월1일에 실행한 jobinstance가 실패해서 다시 실행을 시켜도 jobinstance는 1월1일 데이터만 처리한다.
 
 **JobParameters**<br/>
-joninstance의 실행 단위이다.
+joninstance의 실행 단위이다. jobinstance에 전달되는 매개변수 역할도 한다. string, double, long, date 네가지 형식만 지원한다.
 
 **JobExecution** <br/>
 jobinstance에 대한 실행 시도에 대한 객체이다. jobinstance에 실행 상태, 시작 시간, 종료 시간, 생성 시간 등의 정보를 가지고 있다.
 jobinstance가 실패해서 재실행을 하면 동일한 jobinstance를 실행하지만, jobexecution은 두번의 실행 각각 생성된다. 
 
 
+
+참고)
+
+https://khj93.tistory.com/entry/Spring-Batch%EB%9E%80-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B3%A0-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0
