@@ -50,7 +50,7 @@ Spring AOP는 런타임 시점에 적용하는 방식을 사용한다.
 흩어진 관심사를 모듈화한 것이다. 주로 부가 기능을 모듈화한다.
 
 **Advice**<br/>
-실질적인 부가 기능을 담은 구현체
+실질적인 기능을 담은 구현체
 
 **JointPoint**<br/>
 acvice가 적용될 위치이며 **메소드 실행 시점**을 의미한다. (메소드 진입 시점, 생성자 호출 시점, 등등 다양한 시점에서 적용 가능하다.)
@@ -59,7 +59,7 @@ acvice가 적용될 위치이며 **메소드 실행 시점**을 의미한다. (�
 jointpoint의 상세를 정의한 것이다. 구체적으로 advice가 실행될 지점을 정할 수 있다. (ex. A라는 메소드 진입 시점에 호출할 것.)
 
 **Target**<br/>
-ascpect를 적용한는 곳 (클래스, 메소드 등등..)
+ascpect를 적용이 되는 대상 (클래스, 메소드 등등..)
 <br/><br>
 ## AOP 어떻게 사용할까
 
@@ -78,6 +78,7 @@ implementation 'org.springframework.boot:spring-boot-starter-aop'
 AOP 의존성을 추가해야 한다. 
 
 
+<br/><br>
 참고)
 
 https://velog.io/@kai6666/Spring-Spring-AOP-%EA%B0%9C%EB%85%90
