@@ -30,9 +30,10 @@ spring boot-starter-web
 **Spring** - 매우 길다.. 빈을 어떻게 할지 등등 넘 많고 관리해야할게 너무너무 많다
 
 **Spring boot** - application.properties or application.yml 사용하면 훠얼ㅅ어씬 짧고 간단하게 사용 가능하다. ( 난 yml파이다.. ㅎ 더욱 휴먼어블한 느낌
-
+<br/><br>
 ### 내장 서버
 서버 
-서버 ㄱ동 시간이 
-서버 ㄱ동 시간이 단축
+### 내장 서버ㄱㅜ
+### 내장 서버
+spring
 
