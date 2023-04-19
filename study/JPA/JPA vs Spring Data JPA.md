@@ -31,8 +31,17 @@ public interface EntityManager {
 ~~~
 
 ## Hibernate는 JPA의 구현체이다. 
- Hibernate는 JPA라는 명세의 **구현체**이다. 즉, 위에서 언급한 javax.persistence.EntityManager와 같은 인터페이스를 직접 구현한 라이브러리이다. 
- JPA와 Hibernate는 마치 자바의 interface와 해당 interface를 구현한 class와 같은 관계이다. ORM의 프레임 워크기도 하다!
+jpa를 사용하기 위해서는 JPA를 구현한 Hibernate, EclipseLink, DataNucleus 같은 ORM 프레임워크를 사용해야 한다.
+(Hibernate가 가장 범용적으로 다양한 기능을 제공해서 Hibernate를 가장 많이 쓴다.)
+
+Hibernate는 JPA라는 명세의 **구현체**이다. 즉, 위에서 언급한 javax.persistence.EntityManager와 같은 인터페이스를 직접 구현한 라이브러리이다. 
+JPA와 Hibernate는 마치 자바의 interface와 해당 interface를 구현한 class와 같은 관계이다. 
+
+ SQL을 사용하지 않고 직관적인 코드(메소드)를 사용해 데이터를 조작이 가능하다.
+ 
+
+ 
+ 
 
 
  
