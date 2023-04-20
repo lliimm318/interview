@@ -83,7 +83,24 @@ Hibernate 안에는 JDBC API가 동작하고 있다. 단지 개발자가 직접 
 그래서 SQL 자체 쿼리를 작성할 수 있도록 지원도 하고 있다. (SQL과 유사한 JPQL을 지원한다)
 
 ## Spring Data JPA
-Spring에서 제공하는 라이브러리로, JPA를 쉽게 
+Spring에서 제공하는 라이브러리로, JPA를 쉽게 사용할 수 있다!
 
- 
- 
+JPA를 사용하려면 EntityManager를 주입 받아 사용해야하지만,
+Spring Data JPA는 JPA를 추상화 시킨 Repository인터페이슬 제공해준다!
+
+![image](https://user-images.githubusercontent.com/66578746/233225852-3465dfa5-8c32-46e1-8599-e8b68a798d1d.png)
+
+
+사용자가 Repository 인터페이스에 정해진 규칙대로 메소드를 입력하면,
+Spring이 알아서 해당 메소드 이름에 적합한 쿼리를 날리는 구현체를 만들어서 Bean으로 등록해준다.
+
+## Hibernate와 Spring Data JPA의 차이점
+Hibernate는 JPA 구현체이고, Spring Data JPA는 JPA에 대한 데이터 접근의 추상화이다 !
+
+### Hibernate
+- 낮은 결합도의 ORM 프레임 워크
+
+### Spring Data JPA
+- Hibernate, Eclipse Linke 등과 같은 JPA 구현체를 사용할 수 있다
+- 반드시 Hibernate와 같은 JPA 구현체가 필요하다!!
+- @Transaction 어노테이션을 통해 트랜잭션 영역을 선언해서 관리 가능하다
