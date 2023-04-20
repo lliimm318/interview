@@ -82,6 +82,8 @@ Hibernate 안에는 JDBC API가 동작하고 있다. 단지 개발자가 직접 
 복잡한 통계 분석 쿼리를 JPA로 처리하기엔 무리가 있다. 
 그래서 SQL 자체 쿼리를 작성할 수 있도록 지원도 하고 있다. (SQL과 유사한 JPQL을 지원한다)
 
+## Spring Data JPA
+Spring에서 제공하는 라이브러리로, JPA를 쉽게 
 
  
  
