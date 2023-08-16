@@ -16,6 +16,7 @@
 - **HTTP API 에러 처리를 위한 RFC 7807 스펙을 지원합**
 
 - 보안상 이슈로 /api/hello 와 /api/hello/ 는 더 이상 일치하지 않음
+  - https://netmarble.engineering/spring-security-path-matching-inconsistency-cve-2016-5007/
 
 - Logback, Log4j2의 날짜 및 시간의 기본값이 ISO-8601 표준을 따름
 
