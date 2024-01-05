@@ -11,5 +11,30 @@ spring에서 의존성 주입 방법은 setter 주입, 필드 주입, 생성자 
 
 spring 에서 DI는 외부에서 생성된 객체 중 필요한 객체를 **연결**하는 것! (필요한 객체를 해당 .java 파일 안에서 new 연산자를 통해 생성하지 않음)
 
+### Field Injection 필드 주입
 
+필드에 바로 의존 관계를 주입하는 방법 -> 추천하지 않음 !
 
+~~~ java
+@Service
+public class UserService {
+
+    @Autowired
+    private UserRepository userRepository;
+
+}
+~~~
+
+> 요렇게 쓰면 intelliJ에서 warring 나와용
+
+#### 장점 
+
+- 코드가 간결해짐 (과거에 많이 사용)
+
+#### 단점
+
+- 외부에서 접근 불가능
+  - 
+
+- 변경 불가능한 상태로 선언 가능
+  - 생성자의 파라미터를 통해 의존 관계를 한눈에 파악하고 
